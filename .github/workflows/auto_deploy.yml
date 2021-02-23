@@ -27,5 +27,6 @@ jobs:
         node-version: 12
     - name: Install Surge
       run: npm install -g surge
+      
     - name: Run Surge
       run: surge ./ tall-glue.surge.sh --token ${{secrets.SURGE_TOKEN}}
