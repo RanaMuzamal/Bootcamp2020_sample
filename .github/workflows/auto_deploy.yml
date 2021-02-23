@@ -42,7 +42,7 @@ jobs:
      # - name: Build React App
       #  run: yarn build
       - name: Install surge
-        run: npm install --g surge
+        run: npm install -g surge
         
       - name: Deploy This surge
         run: surge ./Bootcamp_2020_repo.surge.sh --token ${{secrets.SURGE_TOKEN}}
