@@ -29,7 +29,7 @@ jobs:
          node-version: 12
       - name: GitHub Action for Yarn
   # You may pin to the exact commit or the version.
-  # uses: Borales/actions-yarn@4965e1a0f0ae9c422a9a5748ebd1fb5e097d22b9
+  # uses: Borales/actions-yarn@e78087906322a40e60b2dd7b252e654f
         uses: Borales/actions-yarn@v2.0.0
         with:
     # Yarn command
@@ -42,7 +42,7 @@ jobs:
      # - name: Build React App
       #  run: yarn build
       - name: Install surge
-        run: npm install --g surge
+        run: npm install -g surge
         
       - name: Deploy This surge
         run: surge ./Bootcamp_2020_repo.surge.sh --token ${{secrets.SURGE_TOKEN}}
